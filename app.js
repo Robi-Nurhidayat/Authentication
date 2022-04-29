@@ -8,9 +8,11 @@ const express = require('express');
 
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.get('/', function(req, res) {
 
-    console.log("ini berada dihalaman home")
+    res.render('home')
 })
 
 app.listen(3000, function() {

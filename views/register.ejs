@@ -1,0 +1,20 @@
+<%- include('template/header') -%>
+
+    <div class="container">
+        <h1>Silahkan Register terlebih dahulu</h1>
+        <form action="/register" method="post">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+        </form>
+    </div>
+
+    <%- include('template/footer') -%>
